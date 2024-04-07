@@ -1,0 +1,21 @@
+{
+    "name": "Laravel Development",
+    "dockerComposeFile": "../docker-compose.yml",
+    "service": "app",
+    "workspaceFolder": "/var/www",
+    "customizations": {
+		"vscode": {
+			"extensions": [
+                "zobo.php-intellisense",
+                "bmewburn.vscode-intelephense-client",
+				// "mikestead.dotenv",
+				"amiralizadeh9480.laravel-extra-intellisense",
+				"ryannaddy.laravel-artisan",
+				// "onecentlin.laravel5-snippets",
+				"onecentlin.laravel-blade"
+			],
+			"settings": {}
+		}
+	}
+  }
+  

@@ -1,0 +1,5 @@
+mes.test {
+  reverse_proxy app:9000
+  encode gzip
+  tls internal
+}

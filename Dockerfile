@@ -1,8 +1,10 @@
 FROM php:8.2-fpm-alpine
 
 # Install system dependencies
-RUN apk add --no-cache openssl mysql-client nodejs npm
+RUN apk add --no-cache openssl mysql-client nodejs npm zip unzip git curl 
 RUN docker-php-ext-install pdo pdo_mysql
+
+# ca-certificates sqlite3 libpng-dev python2 dnsutils librsvg2-bin fswatch ffmpeg
 
 # Get latest Composer
 COPY --from=composer:latest /usr/bin/composer /usr/bin/composer

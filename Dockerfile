@@ -15,7 +15,7 @@ COPY . /var/www
 
 # Install PHP and JS dependencies
 RUN composer install
-RUN npm install && npm run dev
+RUN npm install && npm run build
 
+CMD php artisan serve --host=0.0.0.0 --port=9000
 EXPOSE 9000
-CMD ["php-fpm"]
